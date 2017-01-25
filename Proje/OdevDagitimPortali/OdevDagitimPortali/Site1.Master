@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="OdevDagitimPortali.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+
+</head>
+<body>
+    <form id="form2" runat="server">
+      <div class="container" style="margin-top:30px;">
+        <div class="jumbotron">
+          <h1 style="text-align: center">Ödev Dağıtım Portalı</h1>
+        </div>
+        <div class="row">
+        <div class="col-lg-3 sidebar">
+<ul class="nav nav-sidebar">
+            <li class="active"><a href="default.aspx">Kayıtlar </a></li>
+            <li><a href="odevler.aspx">Ödevler</a></li>
+            <li><a href="ogrenciler.aspx">Öğrenciler</a></li>
+            <li><a href="dersler.aspx">Dersler</a></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-9">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+        </div>
+
+          </div>
+      </div>
+     <footer class="footer">
+      <div class="container">
+        <hr />
+        <p class="text-info">Tüm Hakları Saklıdır <br /> Antalya 2016</p>
+      </div>
+    </footer>
+    </form>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
